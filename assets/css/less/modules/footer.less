@@ -1,0 +1,145 @@
+.bt-footer{
+	font-size: 16px;
+	line-height: 26px;
+	color: #969696;
+	background: #151515;
+	margin-top: 60px;
+	&.bt-stick{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+		margin-top: 0;
+		.header-minivertical &{
+			padding-left: 45px;
+		}
+	}
+	ul, ol{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li{
+			margin-bottom: 15px;
+		}
+	}
+	.widget{
+		margin-bottom: 30px;
+		.wg-title{
+			font-size: 22px;
+			line-height: 30px;
+			color: #ffffff;
+			margin-bottom: 30px;
+			&:after{
+				content: ".";
+				color: @main-color;
+			}
+		}
+		&.widget_text p:last-child{
+			margin-bottom: 0;
+		}
+		.bt-social-wrap a{
+			.bt-social-background;
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			font-size: 16px;
+			line-height: 40px;
+			text-align: center;
+			color: #ffffff;
+			background: @main-color;
+			-webkit-border-radius: 50%;
+			border-radius: 50%;
+			&:not(:last-child){
+				margin-right: 5px;
+			}
+			&:hover{
+				color: #ffffff;
+				-webkit-box-shadow: inset 0 0 20px 20px fadeout(#ffffff, 85);
+				-ms-box-shadow: inset 0 0 20px 20px fadeout(#ffffff, 85);
+				box-shadow: inset 0 0 20px 20px fadeout(#ffffff, 85);
+			}
+		}
+		.tnp-widget-minimal .tnp-form{
+			position: relative;
+			&:before{
+				content: "\f1d8";
+				font-family: Fontawesome;
+				position: absolute;
+				top: 12px;
+				right: 20px;
+				font-size: 20px;
+				color: #636363;
+				z-index: 1;
+			}
+			input{
+				margin-bottom: 0;
+				&.tnp-email{
+					width: 100%;
+					font-size: 15px;
+					line-height: 20px;
+					color: #afbec5;
+					background: #252525;
+					padding: 15px 20px;
+					border-color: #252525;
+					&:focus{
+						-webkit-box-shadow: inset 0 0 20px 20px fadeout(#ffffff, 95);
+						-ms-box-shadow: inset 0 0 20px 20px fadeout(#ffffff, 95);
+						box-shadow: inset 0 0 20px 20px fadeout(#ffffff, 95);
+					}
+				}
+				&.tnp-submit{
+					position: absolute;
+					top: 0;
+					right: 0;
+					width: 60px;
+					height: 52px;
+					opacity: 0;
+					z-index: 3;
+				}
+			}
+			::-webkit-input-placeholder {
+				color: @gray-color;
+			}
+			:-ms-input-placeholder {
+				color: @gray-color;
+			}
+		}
+	}
+	.bt-footer-top{
+		position: relative;
+		color: #969696;
+		background: #151515;
+		padding: 90px 0 60px;
+		a{
+			color: #ffffff;
+			&:hover{
+				color: @main-color;
+			}
+		}
+		.bt-overlay{
+			.overlay(1);
+		}
+		.bt-content{
+			position: relative;
+			z-index: 9;
+		}
+	}
+	.bt-footer-bottom{
+		color: #969696;
+		background: #000000;
+		padding: 30px 0;
+		a{
+			color: #ffffff;
+			&:hover{
+				color: @main-color;
+			}
+		}
+		.widget{
+			margin-bottom: 0;
+		}
+	}
+	&.bt-footer-default{
+		padding: 30px 0;
+	}
+}

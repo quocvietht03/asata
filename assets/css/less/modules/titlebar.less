@@ -1,0 +1,140 @@
+.bt-titlebar{
+	background: #ffffff;
+	padding-bottom: 90px;
+	.bt-titlebar-inner{
+		position: relative;
+		width: 100%;
+		background: #fafafa;
+		padding: 50px 0;
+		z-index: 1;
+		.bt-overlay{
+			.overlay(-1);
+		}
+		.bt-page-title{
+			color: @head-color;
+			padding: 5px 0;
+			-ms-word-wrap: break-word;
+			word-wrap: break-word;
+			h2{
+				font-size: 42px;
+				line-height: 50px;
+				color: inherit;
+				margin: 0;
+			}
+		}
+		.bt-breadcrumb{
+			font-size: 16px;
+			line-height: 26px;
+			padding: 5px 0;
+			.bt-before, .bt-after, .bt-path{
+				display: inline-block;
+			}
+			a{
+				color: inherit;
+				&:hover{
+					color: @main-color;
+				}
+			}
+			.bt-deli{
+				opacity: 0.5;
+			}
+		}
+		.bt-subheader-inner{
+			position: relative;
+			display: -webkit-box;
+			align-items: center;
+			height: inherit;
+			margin: 0 auto;
+			-moz-box-align: center;
+			.bt-subheader-cell{
+				height: 100%;
+				display: flex;
+				display: -webkit-flex;
+				flex-grow: 1;
+				-webkit-flex-grow: 1;
+				flex-shrink: 0;
+				-webkit-flex-shrink: 0;
+				align-items: center;
+				-moz-box-align: center;
+				-webkit-box-align: center;
+				-moz-box-flex: 1;
+				-webkit-box-flex: 1;
+				.bt-content{
+					position: relative;
+					width: 100%;
+					z-index: 9;
+				}
+			}
+		}
+	}
+	&.bt-titlebar-v3{
+		padding-bottom: 125px;
+		.bt-titlebar-inner{
+			position: relative;
+			.bt-breadcrumb{
+				position: absolute;
+				top: 100%;
+				left: 50%;
+				width: 100%;
+				max-width: 1170px;
+				height: 62px;
+				text-align: left;
+				background: #ffffff;
+				padding: 0 20px 0 0;
+				overflow: hidden;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+				box-shadow: 0 30px 160px fadeout(#000000, 85);
+				-webkit-transform: translateX(-50%) translateY(-50%);
+				-ms-transform: translateX(-50%) translateY(-50%);
+				transform: translateX(-50%) translateY(-50%);
+				@media(max-width: @mobile-width - 0.02){
+					width: ~"calc(100% - 30px)";
+				}
+				.bt-path{
+					width: 100%;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+				a,span{
+					display: inline-block;
+					vertical-align: middle;
+				}
+				.bt-home{
+					height: 62px;
+					width: 72px;
+					font-size: 0;
+					line-height: 62px;
+					text-align: center;
+					letter-spacing: 0;
+					color: @main-color;
+					margin-right: 25px;
+					border-right: 1px solid #f3f4f6;
+					&:before{
+						font-family: eleganticons;
+						content: "\e009";
+						font-size: 16px;
+						font-weight: 400;
+						line-height: 1px;
+						display: inline-block;
+						vertical-align: text-bottom;
+					}
+					&:hover{
+						color: #ffffff;
+						background: @main-color;
+					}
+				}
+				.bt-deli{
+					margin: 0 3px;
+					&.first{
+						display: none;
+					}
+				}
+				.current{
+					display: inline;
+				}
+			}
+		}
+	}
+}

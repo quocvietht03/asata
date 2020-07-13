@@ -1,0 +1,102 @@
+body {
+	input,textarea,select {
+		.easing-animation;
+		outline: none;
+		font-size: 16px;
+		line-height: 24px;
+		color: @base-color;
+		background-color: transparent;
+		border: 1px solid #eaeaea;
+		margin-bottom: 30px;
+		padding: 12px 15px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		&:hover, &:focus {
+			border-color: #dcdcdc;
+		}
+	}
+	input[type=number]::-webkit-inner-spin-button, 
+	input[type=number]::-webkit-outer-spin-button { 
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+	}
+	select{
+		min-height: 50px;
+		background-image: url("../images/downwards-pointer.png");
+		background-repeat: no-repeat;
+		background-size: 12px;
+		background-position: center right 10px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+	}
+	input[type="checkbox"]{
+		margin-right: 5px;
+	}
+	input[type="submit"] {
+		.easing-animation;
+		font-family: @head-font;
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 24px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		color: #ffffff;
+		background-color: @main-color;
+		border-color: @main-color;
+		padding: 12px 30px;
+		&:hover, &:focus, &:active {
+			background-color: darken(@main-color, 10);
+			border-color: darken(@main-color, 10);
+			color:#ffffff;
+		}
+	}
+	
+	.search-form input[type="submit"]{
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	textarea {
+		resize: none;
+		min-height: 180px;
+		margin-bottom: 30px;
+	}
+
+	.placeholder {
+		color: #898989;
+	}
+
+	::-webkit-input-placeholder {
+		color: #898989;
+	}
+
+	:-ms-input-placeholder {
+		color: #898989;
+	}
+	
+	.wpcf7-form{
+		.wpcf7-form-control-wrap{
+			display: block;
+			margin-bottom: 30px;
+			input,textarea,select{
+				width: 100%;
+				max-width: 100%;
+				margin: 0;
+				background-color: #f3f4f6;
+				&:hover, &:focus{
+					background-color: #ffffff;
+				}
+			}
+			textarea{
+				height: 180px;
+			}
+		}
+		div.wpcf7-response-output{
+			margin: 0;
+		}
+	}
+}
