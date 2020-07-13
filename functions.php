@@ -17,13 +17,9 @@ if (!function_exists('asata_register_sidebar')) {
 /* Register Default Fonts */
 if (!function_exists('asata_fonts_url')) {
 	function asata_fonts_url() {
-		global $asata_options;
-		$base_font = (isset($asata_options['body_font']['font-family'])&&$asata_options['body_font']['font-family'])?$asata_options['body_font']['font-family']: 'Muli';
-		$head_font = (isset($asata_options['h1_font']['font-family'])&&$asata_options['h1_font']['font-family'])?$asata_options['h1_font']['font-family']: 'Montserrat';
-		
 		$font_url = '';
 		if ( 'off' !== _x( 'on', 'Google font: on or off', 'asata' ) ) {
-			$font_url = add_query_arg( 'family', urlencode( $base_font.':400,400i,600,700|'.$head_font.':400,400i,500,600,700' ), "//fonts.googleapis.com/css" );
+			$font_url = add_query_arg( 'family', urlencode( 'Muli:400,400i,600,700|Montserrat:400,400i,500,600,700' ), "//fonts.googleapis.com/css" );
 		}
 		return $font_url;
 	}
