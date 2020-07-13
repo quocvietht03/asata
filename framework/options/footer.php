@@ -244,7 +244,7 @@ Redux::setSection( $opt_name, array(
 			'letter-spacing'   => true,
 			'text-align'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'required' 		=> array('f1_footer_top' , '=', '1'),
 			'output'    => array('.bt-footer-v1 .bt-footer-top')
@@ -269,7 +269,7 @@ Redux::setSection( $opt_name, array(
 			'text-align'   => false,
 			'text-transform'   => true,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'required' 		=> array('f1_footer_top' , '=', '1'),
 			'output'    => array('.bt-footer-v1 .bt-footer-top .wg-title')
@@ -372,7 +372,7 @@ Redux::setSection( $opt_name, array(
 			'letter-spacing'   => true,
 			'text-align'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'output'    => array('.bt-footer-v1 .bt-footer-bottom')
 		),
@@ -607,7 +607,7 @@ Redux::setSection( $opt_name, array(
 			'letter-spacing'   => true,
 			'text-align'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'required' 		=> array('f2_footer_top' , '=', '1'),
 			'output'    => array('.bt-footer-v2 .bt-footer-top')
@@ -632,7 +632,7 @@ Redux::setSection( $opt_name, array(
 			'text-align'   => false,
 			'text-transform'   => true,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'required' 		=> array('f2_footer_top' , '=', '1'),
 			'output'    => array('.bt-footer-v2 .bt-footer-top .wg-title')
@@ -735,7 +735,7 @@ Redux::setSection( $opt_name, array(
 			'letter-spacing'   => true,
 			'text-align'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'output'    => array('.bt-footer-v2 .bt-footer-bottom')
 		),

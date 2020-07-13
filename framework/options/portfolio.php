@@ -100,7 +100,7 @@ Redux::setSection( $opt_name, array(
 			'text-transform'   => true,
 			'color'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'required' 		=> array('portfolio_title' , '=', '1'),
 			'output'   => array('.tax-fw-portfolio-category .bt-post-item .bt-title')
@@ -158,7 +158,7 @@ Redux::setSection( $opt_name, array(
 			'text-transform'   => true,
 			'color'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'required' 		=> array('portfolio_meta' , '=', '1'),
 			'output'   => array('.tax-fw-portfolio-category .bt-post-item .bt-meta > li')
@@ -325,7 +325,7 @@ Redux::setSection( $opt_name, array(
 			'text-transform'   => true,
 			'color'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'required' 		=> array('single_portfolio_title' , '=', '1'),
 			'output'   => array('.single-fw-portfolio .fw-portfolio .bt-title')

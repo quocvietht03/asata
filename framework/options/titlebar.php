@@ -121,7 +121,7 @@ Redux::setSection( $opt_name, array(
 			'text-align'   => false,
 			'text-transform'   => true,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'output'    => array('.bt-titlebar .bt-titlebar-inner .bt-page-title h2')
 		),
@@ -171,7 +171,7 @@ Redux::setSection( $opt_name, array(
 			'letter-spacing'   => true,
 			'text-align'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'required' 		=> array('titlebar_page_title_before' , '=', '1'),
 			'output'    => array('.bt-titlebar .bt-titlebar-inner .bt-page-title .bt-before')
@@ -210,7 +210,7 @@ Redux::setSection( $opt_name, array(
 			'letter-spacing'   => true,
 			'text-align'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'required' 		=> array('titlebar_page_title_after' , '=', '1'),
 			'output'    => array('.bt-titlebar .bt-titlebar-inner .bt-page-title .bt-after')
@@ -232,7 +232,7 @@ Redux::setSection( $opt_name, array(
 			'text-align'   => false,
 			'text-transform'   => true,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'output'    => array('.bt-titlebar .bt-titlebar-inner .bt-breadcrumb .bt-path')
 		),
@@ -314,7 +314,7 @@ Redux::setSection( $opt_name, array(
 			'letter-spacing'   => true,
 			'text-align'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'required' 		=> array('titlebar_breadcrumb_before' , '=', '1'),
 			'output'    => array('.bt-titlebar .bt-titlebar-inner .bt-breadcrumb .bt-before')
@@ -353,7 +353,7 @@ Redux::setSection( $opt_name, array(
 			'letter-spacing'   => true,
 			'text-align'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'required' 		=> array('titlebar_breadcrumb_after' , '=', '1'),
 			'output'    => array('.bt-titlebar .bt-titlebar-inner .bt-breadcrumb .bt-after')

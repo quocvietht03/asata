@@ -98,7 +98,7 @@ Redux::setSection( $opt_name, array(
 			'text-transform'   => true,
 			'color'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'required' 		=> array('single_team_title' , '=', '1'),
 			'output'   => array('.single-bt_team .bt_team .bt-title')

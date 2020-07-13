@@ -100,7 +100,7 @@ Redux::setSection( $opt_name, array(
 			'text-transform'   => true,
 			'color'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'required' 		=> array('post_title' , '=', '1'),
 			'output'   => array('.category .bt-post-item .bt-title, .tag .bt-post-item .bt-title, .search .bt-post-item .bt-title')
@@ -158,7 +158,7 @@ Redux::setSection( $opt_name, array(
 			'text-transform'   => true,
 			'color'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'required' 		=> array('post_meta' , '=', '1'),
 			'output'   => array('.blog .bt-post-item .bt-meta > li, .tag .bt-post-item .bt-meta > li, .category .bt-post-item .bt-meta > li, .tag .bt-post-item .bt-meta > li, .search .bt-post-item .bt-meta > li')
@@ -367,7 +367,7 @@ Redux::setSection( $opt_name, array(
 			'text-transform'   => true,
 			'color'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'required' 		=> array('single_post_title' , '=', '1'),
 			'output'   => array('.single-post .bt-post-item .bt-title')
@@ -425,7 +425,7 @@ Redux::setSection( $opt_name, array(
 			'text-transform'   => true,
 			'color'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'required' 		=> array('single_post_meta' , '=', '1'),
 			'output'   => array('.single-post .bt-post-item .bt-meta > li')

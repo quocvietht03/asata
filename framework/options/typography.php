@@ -15,7 +15,7 @@ Redux::setSection( $opt_name, array(
 			'text-align'   => false,
 			'color'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'output'    => array('body')
 		),
@@ -29,7 +29,7 @@ Redux::setSection( $opt_name, array(
 			'text-align'   => false,
 			'color'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'output'    => array('h1, .bt-font-h1')
 		),
@@ -43,7 +43,7 @@ Redux::setSection( $opt_name, array(
 			'text-align'   => false,
 			'color'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'output'    => array('h2, .bt-font-h2')
 		),
@@ -57,7 +57,7 @@ Redux::setSection( $opt_name, array(
 			'text-align'   => false,
 			'color'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'output'    => array('h3, .bt-font-h3')
 		),
@@ -71,7 +71,7 @@ Redux::setSection( $opt_name, array(
 			'text-align'   => false,
 			'color'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'output'    => array('h4, .bt-font-h4')
 		),
@@ -85,7 +85,7 @@ Redux::setSection( $opt_name, array(
 			'text-align'   => false,
 			'color'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'output'    => array('h5, .bt-font-h5')
 		),
@@ -99,7 +99,7 @@ Redux::setSection( $opt_name, array(
 			'text-align'   => false,
 			'color'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'output'    => array('h6, .bt-font-h6')
 		),
@@ -113,7 +113,7 @@ Redux::setSection( $opt_name, array(
 			'text-align'   => false,
 			'color'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'output'    => array('.button, .bt-btn, .vc_btn3')
 		),
@@ -137,7 +137,7 @@ Redux::setSection( $opt_name, array(
 			'text-align'   => false,
 			'color'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 		),
 		array(
 			'id'=>'extra_element_1',
@@ -158,7 +158,7 @@ Redux::setSection( $opt_name, array(
 			'text-align'   => false,
 			'color'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 		),
 		array(
 			'id'=>'extra_element_2',
@@ -179,7 +179,7 @@ Redux::setSection( $opt_name, array(
 			'text-align'   => false,
 			'color'   => false,
 			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
-			'fonts'  => $fonts,
+			'fonts'  => $fonts, 'google' => false,
 		),
 		array(
 			'id'=>'extra_element_3',
