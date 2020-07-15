@@ -31,6 +31,7 @@ if (!function_exists('asata_enqueue_scripts')) {
 		
 		/* Fonts */
 		wp_enqueue_style('asata-fonts', asata_fonts_url(), false );
+		wp_enqueue_style('asata-external-fonts', get_template_directory_uri().'/framework/options/fonts.css', false );
 		
 		/* Bootstrap */
 		wp_enqueue_style('bootstrap', get_template_directory_uri().'/assets/vendors/bootstrap/css/bootstrap.min.css', array(), false);

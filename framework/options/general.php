@@ -137,7 +137,7 @@ Redux::setSection( $opt_name, array(
 			'letter-spacing'   => false,
 			'text-align'   => false,
 			'text-transform'   => true,
-			'ext-font-css' => get_template_directory().'/framework/options/fonts.css',
+			'ext-font-css' => get_template_directory_uri().'/framework/options/fonts.css',
 			'fonts'  => $fonts, 'google' => false,
 			'default'  => '',
 			'required' 		=> array('site_loading' , '=', '1'),
