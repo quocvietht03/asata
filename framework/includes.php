@@ -1,6 +1,6 @@
 <?php
 /* Theme install */
-require_once get_template_directory().'/framework/VerifyTheme.php';
+// require_once get_template_directory().'/framework/VerifyTheme.php';
 require_once get_template_directory().'/framework/install/plugin_required.php';
 require_once get_template_directory().'/framework/install/demo_data.php';
 

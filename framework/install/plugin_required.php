@@ -66,6 +66,7 @@ function asata_register_required_plugins() {
 		array(
 			'name'         => esc_html__('Unyson', 'asata'),
 			'slug'         => 'unyson',
+			'source'       => $root.'unyson.zip',
 			'required'     => true,
 		),
 		array(
@@ -98,16 +99,6 @@ function asata_register_required_plugins() {
 		array(
 			'name'      => esc_html__('Newsletter', 'asata'),
 			'slug'      => 'newsletter',
-			'required'  => false,
-		),
-		array(
-			'name'      => esc_html__('Smash Balloon Instagram Feed', 'asata'),
-			'slug'      => 'instagram-feed',
-			'required'  => false,
-		),
-		array(
-			'name'      => esc_html__('Custom Twitter Feeds', 'asata'),
-			'slug'      => 'custom-twitter-feeds',
 			'required'  => false,
 		),
 		

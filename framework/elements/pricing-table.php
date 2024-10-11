@@ -157,7 +157,7 @@ class WPBakeryShortCode_bt_pricing_table extends WPBakeryShortCode {
 		$options_value = array();
 		if(!empty($options)){
 			foreach($options as $option){
-				$tip = $option['tip'] ? '<strong>'.$option['tip'].'</strong>' : '';
+				$tip = isset($option['tip']) && $option['tip'] ? '<strong>'.$option['tip'].'</strong>' : '';
 				$options_value[] = '<li class="'.esc_attr($option['status']).'">'.$option['name'].$tip.'</li>';
 			}
 		}

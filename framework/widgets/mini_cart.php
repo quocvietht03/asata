@@ -45,14 +45,17 @@ class asata_Widget_Mini_Cart extends WC_Widget {
 		if ( $hide_if_empty && WC()->cart->is_empty() ) {
 			$wg_class .= ' hide_cart_widget_if_empty';
 		}
+
+		ob_start();
+			woocommerce_mini_cart();
+		$mini_cart_content = ob_get_clean();
 		
 		ob_start();
 		?>
 			<div class="<?php echo esc_attr($wg_class); ?>">
-				<a class="bt-toggle-btn" href="#"><i class="icon_bag_alt"></i><span class="cart_total" ></span></a>
-				<?php if($type == 'mini') echo '<div class="bt-cart-content"><h3 class="bt-title">'.esc_html__('My Shopping Cart', 'asata').'</h3><div class="widget_shopping_cart_content"></div></div>'; ?>
+				<a class="bt-toggle-btn" href="#"><i class="icon_bag_alt"></i><span class="cart_total" ><?php echo WC()->cart->get_cart_contents_count(); ?></span></a>
+				<?php if($type == 'mini') echo '<div class="bt-cart-content"><h3 class="bt-title">'.esc_html__('My Shopping Cart', 'asata').'</h3><div class="widget_shopping_cart_content">' . $mini_cart_content . '</div></div>'; ?>
 			</div>
-			
 		<?php
 		echo ob_get_clean();
 	}

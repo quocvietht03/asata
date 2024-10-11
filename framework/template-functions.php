@@ -610,11 +610,15 @@ if(!function_exists('asata_add_extra_code_wp_footer')) {
 			</div>';
 		
 		/* Cart Popup */
+		ob_start();
+			woocommerce_mini_cart();
+		$mini_cart_content = ob_get_clean();
+		
 		echo '<div id="bt_cart_popup">
 			<div class="bt-cart-wrap bt-nice-scroll">
 				<div class="bt-cart-content">
 					<h3 class="bt-title">'.__('My Shopping Cart', 'asata').'</h3>
-					<div class="widget_shopping_cart_content"></div>
+					<div class="widget_shopping_cart_content">' . $mini_cart_content . '</div>
 				</div>
 			</div>
 			<a href="#" class="bt-close"><i class="icon_close"></i></a>
