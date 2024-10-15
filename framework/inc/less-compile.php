@@ -187,7 +187,7 @@ function asata_autoCompileLess($inputFile, $outputFile) {
 function asata_addLessStyle() {
 	global $asata_options;
 	
-	$less_design = isset($asata_options['less_design']) ? $asata_options['less_design'] : true; 
+	$less_design = isset($asata_options['less_design']) ? $asata_options['less_design'] : false; 
 	
 	if($less_design){
 		try {

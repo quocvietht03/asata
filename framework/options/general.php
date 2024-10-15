@@ -10,7 +10,7 @@ Redux::setSection( $opt_name, array(
 			'type'     => 'switch',
 			'title'    => esc_html__( 'Enable Less Design', 'asata' ),
 			'subtitle' => esc_html__( 'Enable less design to generate css over time...', 'asata' ),
-			'default'  => true,
+			'default'  => false,
 		),
 		array(
 			'id'       => 'site_layout',
