@@ -327,6 +327,17 @@
 			$('#site_loading').fadeOut();
 		}
 	});
+
+	/* Copyright Current Year */
+	function AsataCopyrightCurrentYear() {
+		var searchTerm = '{Year}',
+			replaceWith = new Date().getFullYear();
+		
+		$('.bt-copyright').each( function() {
+			this.innerHTML = this.innerHTML.replace(searchTerm, replaceWith);
+		});
+	}
+	
 	
 	jQuery(document).ready(function($) {
 		AsataToggleMenuMobile();
@@ -349,6 +360,7 @@
 		AsataMasonry();
 		AsataCountDownClock();
 		AsataFllowEffect();
+		AsataCopyrightCurrentYear();
 		
 		$('.single-post .bt-desc p').each( function() {
 			var $this = $( this );
