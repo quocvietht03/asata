@@ -13,7 +13,7 @@
  * @see 	    https://docs.woocommerce.com/document/template-structure/
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version   3.3.3
+ * @version   	10.3.0
  */
 
 if ( $related_products ) : ?>
