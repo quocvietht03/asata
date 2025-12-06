@@ -99,9 +99,6 @@ if (!function_exists('asata_enqueue_scripts')) {
 		wp_register_script('asata-isogrid', get_template_directory_uri().'/assets/vendors/isogrid.js', array('jquery'), '', true  );
 		wp_register_style('asata-isogrid', get_template_directory_uri().'/assets/vendors/isogrid.css', array(), false );
 		
-		/* html5lightbox */
-		wp_enqueue_script( 'html5lightbox', get_template_directory_uri().'/assets/vendors/html5lightbox/html5lightbox.js', array('jquery'), '', true);
-		
 		/* counterup */
 		wp_register_script( 'counterup', get_template_directory_uri().'/assets/vendors/jquery.counterup.min.js', array('jquery'), '', true);
 

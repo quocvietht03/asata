@@ -63,7 +63,7 @@ class WPBakeryShortCode_bt_icon_video_popup extends WPBakeryShortCode {
 		ob_start();
 		?>
 		<div <?php echo implode(' ', $wrap_attr); ?>>
-			<?php if($icon) echo '<a class="html5lightbox " '.implode(' ', $video_link_attributes).'>'.$icon.'</a>'; ?>
+			<?php if($icon) echo '<a class="html5lightbox " target="_blank" '.implode(' ', $video_link_attributes).'>'.$icon.'</a>'; ?>
 		</div>
 		<?php
 		return ob_get_clean();
